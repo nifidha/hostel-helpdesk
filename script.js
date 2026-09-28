@@ -100,26 +100,33 @@ function sendMessage() {
             "Your complaint will be forwarded to the hostel administration.";
     }
 
-    else if (text.includes("room") ||
-             text.includes("allocation") ||
-             text.includes("vacancy")) {
+   // Maintenance
+else if (text.includes("maintenance") ||
+         text.includes("repair") ||
+         text.includes("fan") ||
+         text.includes("light") ||
+         text.includes("water") ||
+         text.includes("plumbing") ||
+         text.includes("leak") ||
+         text.includes("electricity")) {
 
-        reply =
-            "For room allocation, please provide your year, " +
-            "department and preferred hostel.";
-    }
+    reply =
+        "This appears to be a maintenance issue. " +
+        "Please provide your room number and describe the problem. " +
+        "Example: Water shortage in Room 205.";
+}
 
-    else if (text.includes("maintenance") ||
-             text.includes("repair") ||
-             text.includes("fan") ||
-             text.includes("light") ||
-             text.includes("water")) {
+// Room Allocation
+else if (text.includes("room allocation") ||
+         text.includes("room allotment") ||
+         text.includes("vacancy") ||
+         text.includes("available room") ||
+         text.includes("hostel room")) {
 
-        reply =
-            "Please provide your room number and describe the " +
-            "maintenance problem.";
-    }
-
+    reply =
+        "For room allocation, please provide your year, " +
+        "department and preferred hostel.";
+}
     else if (text.includes("facility") ||
              text.includes("wifi") ||
              text.includes("mess") ||
