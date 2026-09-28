@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Help Desk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏠 Hostel Help Desk</h1>
+    <p>Your virtual hostel assistant</p>
+
+    <div id="chatbox">
+        <div class="bot">
+            Hello! 👋 How can I help you?
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="complaint()">📝 Complaint</button>
+        <button onclick="roomAllocation()">🏠 Room Allocation</button>
+        <button onclick="maintenance()">🔧 Maintenance</button>
+        <button onclick="facilities()">🏢 Facilities</button>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="userInput"
+               placeholder="Type your query...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
